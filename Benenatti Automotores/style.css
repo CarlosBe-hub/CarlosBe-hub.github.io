@@ -45,8 +45,10 @@ body{
 }
 
 .navbar a{
-    display: block;
+    display: flex;
+    justify-content: space-around;
     padding: 23px 20px;
+    align-items: center;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
@@ -55,6 +57,7 @@ body{
 
 .navbar a:hover{
     background-color: red;
+    color: #FFFCFA;
 }
 
 .header{
