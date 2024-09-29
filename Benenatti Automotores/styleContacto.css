@@ -4,6 +4,8 @@
     margin-left: 0;
     padding: 0;
     border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
     
     
 }
@@ -20,7 +22,7 @@
     z-index: 100;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #c92424;
+    border-bottom: 1px solid #969696;
     
 }
 
@@ -62,8 +64,12 @@
 body{
     font-family: sans-serif;
     background-color: #DBD9D5;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
     
 }
+
 
 .titulo{
     display: flex;
@@ -79,6 +85,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 150px;
     
    
     
@@ -205,16 +212,8 @@ body{
     text-decoration: underline;
 }
 
-footer{
-    margin: 100px,100px;
-    padding: 100px 100px;
-    background-color: #FFFCFA;
-    
-}
-.pie{
-    
+
   
     
-}
 
 
