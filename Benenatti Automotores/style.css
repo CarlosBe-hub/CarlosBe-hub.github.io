@@ -128,6 +128,57 @@ p{
   
 }
 
+/* Estilos generales para dispositivos móviles */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Disminuir tamaño de fuente */
+    }
+
+    .head {
+        height: auto; /* Altura automática */
+        padding: 10px; /* Espaciado reducido */
+    }
+
+    .navbar {
+        flex-direction: column; /* Colocar elementos en columna */
+        margin: 0; /* Quitar margen */
+        padding: 10px 0; /* Espaciado alrededor de la barra de navegación */
+    }
+
+    .navbar a {
+        padding: 10px; /* Espaciado reducido en enlaces */
+        font-size: 16px; /* Tamaño de fuente más pequeño */
+    }
+
+    .logo {
+        margin: 10px; /* Margen reducido para el logo */
+    }
+
+    .header {
+        height: 30vh; /* Altura menor para el encabezado */
+        padding-top: 20px; /* Espaciado superior reducido */
+    }
+
+    .title {
+        font-size: 32px; /* Tamaño de fuente reducido para el título */
+        margin-bottom: 20px; /* Margen inferior reducido */
+    }
+
+    p {
+        margin: 10px; /* Margen uniforme reducido */
+        font-size: 16px; /* Tamaño de fuente más pequeño para párrafos */
+    }
+
+    .content_marcas {
+        margin-top: 20px; /* Espaciado superior reducido */
+        margin-bottom: 20px; /* Espaciado inferior reducido */
+    }
+
+    .marcas img {
+        width: 100%; /* Imágenes ocupan todo el ancho del contenedor */
+        height: auto; /* Mantener proporción de imágenes */
+    }
+}
 
 
 

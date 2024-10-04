@@ -1,3 +1,17 @@
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    padding-left: 100px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+
+
+
 .catalogo-container {
     width: 90%;
     margin: 0 auto;
@@ -7,10 +21,7 @@
     text-align: center;
 }
 
-.catalogo-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
+
 
 .articulo {
     width: 30%;
@@ -33,6 +44,8 @@
     width: 450px;
     height: 350px;
     border-radius: 20px;
+    margin-left: 25px;
+    margin-top: 10px;
     
 }
 
