@@ -73,43 +73,13 @@
     background-color: #3d4752;
 }
 
-/* Estilos para dispositivos móviles */
 @media (max-width: 600px) {
-    .titulo {
-        padding-top: 100px; /* Reducir espacio superior */
-        padding-left: 10px; /* Reducir espacio lateral */
-        font-size: 1.8rem; /* Tamaño de fuente más pequeño */
-        margin-bottom: 20px; /* Espaciado inferior reducido */
-    }
-
     .catalogo-container {
-        flex-direction: column; /* Cambiar a columna en móviles */
-        align-items: center; /* Centrar elementos */
-        padding-top: 50px; /* Espacio superior ajustado */
+        flex-direction: column; /* Cambiar a columna */
     }
 
     .articulo {
-        width: 90%; /* Ancho completo en móviles */
-        margin: 10px 0; /* Espaciado vertical */
-    }
-
-    .articulo img {
-        width: 100%; /* Imágenes ocupan el 100% del contenedor */
-        height: auto; /* Mantener proporción de la imagen */
-        margin-left: 0; /* Quitar margen izquierdo */
-        margin-top: 0; /* Quitar margen superior */
-    }
-
-    .articulo h2 {
-        font-size: 1.2rem; /* Tamaño de fuente más pequeño para el título */
-    }
-
-    .articulo p {
-        font-size: 0.9rem; /* Tamaño de fuente más pequeño para el párrafo */
-    }
-
-    .articulo button {
-        padding: 8px 15px; /* Ajustar el espaciado del botón */
-        font-size: 0.9rem; /* Tamaño de fuente más pequeño para el botón */
+        width: 90%; /* Ajustar ancho */
+        margin: 10px 0; /* Espacio entre artículos */
     }
 }
