@@ -128,55 +128,55 @@ p{
   
 }
 
-/* Estilos generales para dispositivos móviles */
+
 @media (max-width: 600px) {
     body {
-        font-size: 14px; /* Disminuir tamaño de fuente */
+        font-size: 14px; 
     }
 
     .head {
-        height: auto; /* Altura automática */
-        padding: 10px; /* Espaciado reducido */
+        height: auto; 
+        padding: 10px; 
     }
 
     .navbar {
-        flex-direction: column; /* Colocar elementos en columna */
-        margin: 0; /* Quitar margen */
-        padding: 10px 0; /* Espaciado alrededor de la barra de navegación */
+        flex-direction: column; 
+        margin: 0; 
+        padding: 10px 0; 
     }
 
     .navbar a {
-        padding: 10px; /* Espaciado reducido en enlaces */
-        font-size: 16px; /* Tamaño de fuente más pequeño */
+        padding: 10px; 
+        font-size: 16px; 
     }
 
     .logo {
-        margin: 10px; /* Margen reducido para el logo */
+        margin: 10px; 
     }
 
     .header {
-        height: 30vh; /* Altura menor para el encabezado */
-        padding-top: 20px; /* Espaciado superior reducido */
+        height: 30vh; 
+        padding-top: 20px; 
     }
 
     .title {
-        font-size: 32px; /* Tamaño de fuente reducido para el título */
-        margin-bottom: 20px; /* Margen inferior reducido */
+        font-size: 32px;
+        margin-bottom: 20px; 
     }
 
     p {
-        margin: 10px; /* Margen uniforme reducido */
-        font-size: 16px; /* Tamaño de fuente más pequeño para párrafos */
+        margin: 10px; 
+        font-size: 16px; 
     }
 
     .content_marcas {
-        margin-top: 20px; /* Espaciado superior reducido */
-        margin-bottom: 20px; /* Espaciado inferior reducido */
+        margin-top: 20px; 
+        margin-bottom: 20px; 
     }
 
     .marcas img {
-        width: 100%; /* Imágenes ocupan todo el ancho del contenedor */
-        height: auto; /* Mantener proporción de imágenes */
+        width: 100%; 
+        height: auto; 
     }
 }
 
