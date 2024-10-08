@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/Benenatti Automotores/styleContacto.css">
     <link rel="stylesheet" href="/Benenatti Automotores/stylefooter.css">
     <link rel="icon" href="/Benenatti Automotores/img/logo nuevo.png" type="image/x-icon">
+   
 </head>
 <body>
     <div class="head">
@@ -17,7 +18,7 @@
 
         <nav class="navbar">     
             <a href="/index.html">Inicio</a>
-            <a href="/Benenatti Automotores/Paginacatalogo.html">Catalogo</a>
+            <a href="/Benenatti Automotores/paginacatalogo.html">Catalogo</a>
             <a href="/Benenatti Automotores/paginacontacto.html">Contacto</a>
         </nav>
 
@@ -43,26 +44,30 @@
 
         <div class="formContacto">
                 <h3>ESCRIBINOS</h3>
-                <form action="">
+                <form action="" novalidate onsubmit="return validar()">
                 
-                    <label for="nombre"> Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="nombre"> Nombre </label>
+                    <input type="text" id="nombre" name="nombre" onfocus="limpiarError(event)" required><span id="errornom" style="display: none; color: red;">*Campo incorrecto</span>
 
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">E-mail (obligatorio)</label>
+                    <input type="email" id="email" name="email" onfocus="limpiarError(event)" required><span id="erroremail" style="display: none; color: red;">*Campo incorrecto</span>
 
-                    <label for="telefono">Teléfono</label>
-                    <input type="text" id="telefono" name="telefono" required>
+                    <label for="telefono">Teléfono (obligatorio)</label>
+                    <input type="text" id="telefono" name="telefono" onfocus="limpiarError(event)" required><span id="errortel" style="display: none; color: red;">*Campo incorrecto</span>
 
                     <label for="asunto">Asunto</label>
-                    <input type="text" id="asunto" name="asunto" >
+                    <input type="text" id="asunto" name="asunto" onfocus="limpiarError(event)"><span id="errorasunto" style="display: none; color: red;">*Campo incorrecto</span>
 
                     <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje"></textarea>
+                    <textarea name="mensaje" id="mensaje" onfocus="limpiarError(event)"></textarea><span id="errormensaje" style="display: none; color: red;">*Campo incorrecto</span>
 
                     <button type="submit">Enviar</button>
                 </form>
+
+                <div id="respuesta"></div>
         </div>
+
+        
 
 
         
@@ -97,6 +102,8 @@
             <p>&copy; 2024 Benenatti Automotores. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="/Benenatti Automotores/formulario.js"></script>
 
 </body>
 </html>
