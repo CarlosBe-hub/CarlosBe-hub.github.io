@@ -63,19 +63,12 @@ body{
     color: #FFFCFA;
 }
 
-.header{
-   
-    height: 60vh !important;
-    background: url(img/logo\ nuevo.png)  no-repeat center;
-    background-size: cover;
-    padding-top: 50px;
-   
-}
+
 
 .content_nosotros{
     justify-content: center;    
     align-items: center;
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 40px;
 }
 
