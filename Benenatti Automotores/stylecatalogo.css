@@ -44,7 +44,7 @@
     width: 450px;
     height: 350px;
     border-radius: 20px;
-    margin-left: 25px;
+    margin-left: 40px;
     margin-top: 10px;
     
 }
@@ -60,7 +60,7 @@
 }
 
 .articulo button {
-    padding: 10px 20px;
+    padding: 10px 220px;
     font-size: 1rem;
     color: white;
     background-color: #ff0000;
