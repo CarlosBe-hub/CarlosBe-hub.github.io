@@ -27,7 +27,7 @@ function autoAdvance() {
 }
 
 
-const autoSlideInterval = setInterval(autoAdvance, 4000);
+const autoSlideInterval = setInterval(autoAdvance, 2500);
 
 
 document.querySelector('.carousel-siguiente').addEventListener('click', () => {
