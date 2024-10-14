@@ -62,6 +62,7 @@
     
 }
 body{
+    text-align: center;
     font-family: sans-serif;
     background-color: #DBD9D5;
     display: flex;
