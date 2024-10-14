@@ -73,17 +73,6 @@
     background-color: #3d4752;
 }
 
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
 @media (max-width: 600px) {
     .catalogo-container {
         flex-direction: column;
