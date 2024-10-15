@@ -18,8 +18,7 @@
     padding-top: 100px; 
     display: flex;
     justify-content: space-around;
-    text-align: center;
-}
+    
 
 
 
@@ -71,6 +70,16 @@
 
 .articulo button:hover {
     background-color: #3d4752;
+}
+
+html,body{
+    height: 100%;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 600px) {
