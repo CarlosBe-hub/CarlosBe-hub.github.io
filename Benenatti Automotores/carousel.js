@@ -1,81 +1,57 @@
 
-
 const imagenes = [
-    { img:"/Benenatti Automotores/img/auto3ford.webp"},
-
-    { img:"/Benenatti Automotores/img/Fiat-Cronos.jpg"},
-
-    { img:"/Benenatti Automotores/img/toyota-hilux.jpg"}
+    { img: "/Benenatti Automotores/img/auto3ford.webp", titulo:"Ford Taunus" },
+    { img: "/Benenatti Automotores/img/Fiat-Cronos.jpg", titulo:"Fiat Cronos" },
+    { img: "/Benenatti Automotores/img/toyota-hilux.jpg", titulo:"Toyota Hilux" },
 ];
 
 const carouselImage = document.getElementById('carousel-image');
-const nextButton = document.querySelector('.next');
-const prevButton = document.querySelector('.prev');
+const tituloElement = document.createElement('h5'); 
+tituloElement.classList.add('carousel-title'); 
+carouselImage.parentElement.appendChild(tituloElement); 
+const nextButton = document.querySelector('.siguiente');
+const prevButton = document.querySelector('.atras');
 
-let index = 0;
+let currentIndex = 0; 
 
-function mostrarImg(index){
+function mostrarImg(index) {
     carouselImage.src = imagenes[index].img;
-
+    tituloElement.textContent = imagenes[index].titulo;
 }
 
-nextButton.addEventListener('click',(event) => {
+nextButton.addEventListener('click', (event) => {
     event.preventDefault();
-    index =(index + 1) %imagenes.length;
-    mostrarImg(index);
-
+    currentIndex = (currentIndex + 1) % imagenes.length; 
+    mostrarImg(currentIndex);
+    resetAutoSlide(); 
 });
 
-prevButton.addEventListener('click', (event) =>{
+prevButton.addEventListener('click', (event) => {
     event.preventDefault();
-    index = (index - 1 + imagenes.length) % imagenes.length;
-    mostrarImg(index);
-});
-
-window.addEventListener('load', () => {
-    mostrarImg(index);
-});
-
-
-
-
-
-/* let currentIndex = 0;
-const images = document.querySelectorAll('.carousel-inner img');
-const totalImages = images.length;
-
-
-function updateCarousel() {
-    const offset = -currentIndex * 100; 
-    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
-}
-
-
-document.querySelector('.carousel-siguiente').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalImages; 
-    updateCarousel();
-});
-
-
-document.querySelector('.carousel-atras').addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + totalImages) % totalImages; 
-    updateCarousel();
+    currentIndex = (currentIndex - 1 + imagenes.length) % imagenes.length; 
+    mostrarImg(currentIndex);
+    resetAutoSlide(); 
 });
 
 
 function autoAdvance() {
-    currentIndex = (currentIndex + 1) % totalImages; 
-    updateCarousel();
+    currentIndex = (currentIndex + 1) % imagenes.length; 
+    mostrarImg(currentIndex);
+    
 }
 
+function resetAutoSlide() {
+    
+    clearInterval(autoSlideInterval);
+    clearTimeout(resetTimeout);
 
-const autoSlideInterval = setInterval(autoAdvance, 2500);
+    resetTimeout = setTimeout(() => {
+        autoSlideInterval = setInterval(autoAdvance, 3000);
+    }, 4000);
+}
 
+const autoSlideInterval = setInterval(autoAdvance, 3000);
 
-document.querySelector('.carousel-siguiente').addEventListener('click', () => {
-    clearInterval(autoSlideInterval); 
+window.addEventListener('load', () => {
+    mostrarImg(currentIndex); 
 });
-
-document.querySelector('.carousel-atras').addEventListener('click', () => {
-    clearInterval(autoSlideInterval); 
-}); */
