@@ -12,7 +12,8 @@ carouselImage.parentElement.appendChild(tituloElement);
 const nextButton = document.querySelector('.siguiente');
 const prevButton = document.querySelector('.atras');
 
-let currentIndex = 0; 
+let currentIndex = 0;
+let resetTimeout; 
 
 function mostrarImg(index) {
     carouselImage.src = imagenes[index].img;
