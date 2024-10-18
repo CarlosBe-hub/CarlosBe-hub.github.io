@@ -51,7 +51,7 @@ function resetAutoSlide() {
     }, 4000);
 }
 
-const autoSlideInterval = setInterval(autoAdvance, 3000);
+let autoSlideInterval = setInterval(autoAdvance, 3000);
 
 window.addEventListener('load', () => {
     mostrarImg(currentIndex); 
