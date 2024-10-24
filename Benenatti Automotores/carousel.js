@@ -1,8 +1,14 @@
 
 const imagenes = [
-    { img: "/Benenatti Automotores/img/auto3ford.webp", titulo:"Ford Taunus" },
-    { img: "/Benenatti Automotores/img/Fiat-Cronos.jpg", titulo:"Fiat Cronos" },
-    { img: "/Benenatti Automotores/img/toyota-hilux.jpg", titulo:"Toyota Hilux" },
+    { img: "/Benenatti Automotores/img/auto3ford.webp", titulo: "Ford Taunus" },
+    { img: "/Benenatti Automotores/img/audi600x392.jpg", titulo: "Audi A3" },
+    { img: "/Benenatti Automotores/img/amarok600x392.jpg", titulo: "Volkswagen Amarok" },
+    { img: "/Benenatti Automotores/img/golTrend600x392.jpg",titulo: "Gol Trend" },
+    { img: "/Benenatti Automotores/img/audia4600x392.jpg", titulo: "Audi A4" },
+    { img: "/Benenatti Automotores/img/corolla600x392.jpg", titulo: "Toyota Corolla" },
+    { img: "/Benenatti Automotores/img/auto3chevrolet.jpg", titulo:"Chevrolet Silverado" },
+    { img: "/Benenatti Automotores/img/sanderors600x392.jpg", titulo: "Renault Sandero RS" },
+    { img: "/Benenatti Automotores/img/golf600x392.jpg", titulo: "Volkswagen Golf"} ,
 ];
 
 const carouselImage = document.getElementById('carousel-image');

@@ -28,7 +28,7 @@
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #fffcfa;
     transition: transform 0.3s;   
     display: flex;
     flex-direction: column;
@@ -55,21 +55,21 @@
 
 .articulo p {
     font-size: 1rem;
-    color: #555;
+    color: #969696;
 }
 
 .articulo button {
     padding: 10px 220px;
     font-size: 1rem;
     color: white;
-    background-color: #ff0000;
+    background-color: #c92424;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .articulo button:hover {
-    background-color: #3d4752;
+    background-color: #969696;
 }
 
 html,body{
